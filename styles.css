@@ -38,15 +38,6 @@ body {
     border-radius: 250px;
 }
 
-#contact-button:hover #header-img{
-    background-image: url("images/ward-nobkg-smile.png");
-
-}
-
-#header-img:hover{
-    background-image: url("images/ward-nobkg-smile.png");
-}
-
 #footer{
     background-color: #177E89;
     text-align: center;
