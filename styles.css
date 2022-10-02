@@ -1,0 +1,61 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: #242229;
+    color: #ffffff;
+}
+
+.emphasized { font-style: italic; }
+
+
+#header, .main-text{
+    margin: 10px 200px 50px;
+}
+
+#header{
+    text-align: left;
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    align-items: center;
+}
+
+#contact-button{
+    background-color: #177E89;
+    border: 1px black;
+    padding: 10px;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+}
+
+#header-img{
+    background-image: url("images/ward-nobkg.png");
+    background-size: cover;
+    margin: 20px auto;
+    max-width: 400px;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+}
+
+#contact-button:hover #header-img{
+    background-image: url("images/ward-nobkg-smile.png");
+
+}
+
+#header-img:hover{
+    background-image: url("images/ward-nobkg-smile.png");
+}
+
+#footer{
+    background-color: #177E89;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    color: black;
+    margin: 0px;
+}
+
+#main-text{
+    height: 100%
+}
