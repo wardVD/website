@@ -10,9 +10,16 @@
             <div>
                 <h1>Machine Learning Engineer</h1>
                 <h4>Cloud-native machine learning engineer with a love for MLOps.</h4>
-                <a id="contact-button" href="mailto:  wardvandriessche@gmail.com" target="_blank">Contact me</a>
+                <a id="contact-button" href="mailto:  wardvandriessche@gmail.com" 
+                   target="_blank"
+                   onmouseover="imgToSmile()"
+                   onmouseout="imgToNormal()">
+                   Contact me</a>
             </div>
-            <div id="header-img"></div>
+            <div id="header-img" 
+                 onmouseover="imgToSmile()"
+                 onmouseout="imgToNormal()">
+            </div>
         </div>
         <div class="main-text">
             <h1>About me</h1>
@@ -22,6 +29,6 @@
             </p>
         </div>
         <p id="footer">I still need to do this part</p>
- 
+        <script src="index.js"></script>
     </body>
 </html>
