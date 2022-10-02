@@ -7,16 +7,21 @@ body {
 .emphasized { font-style: italic; }
 
 
-#header, .main-text{
-    margin: 10px 200px 50px;
+#header, #header-img, .main-text{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80%
 }
 
 #header{
     text-align: left;
     display: flex;
-    height: 300px;
-    flex-direction: row;
+    border: 10px white;
     align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #contact-button{
@@ -29,12 +34,10 @@ body {
 }
 
 #header-img{
-    background-image: url("images/ward-nobkg.png");
-    background-size: cover;
-    margin: 20px auto;
-    height: 250px;
-    width: 250px;
-    border-radius: 250px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    max-width: 250px;
+    border-radius: 100%;
 }
 
 #footer{
