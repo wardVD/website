@@ -32,7 +32,6 @@ body {
     background-image: url("images/ward-nobkg.png");
     background-size: cover;
     margin: 20px auto;
-    max-width: 400px;
     height: 250px;
     width: 250px;
     border-radius: 250px;
