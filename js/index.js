@@ -9,3 +9,9 @@ function imgToNormal(){
 function jobPage(){
     window.location.href="pages/job.html";
 }
+
+function loadNavBar(){
+    fetch('navbar.html')
+    .then(response=> response.text())
+    .then(text=> document.getElementById('navbar').innerHTML = text);
+  }
