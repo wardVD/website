@@ -14,6 +14,7 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* Style the links inside the navigation bar */
@@ -91,11 +92,14 @@ body {
   padding-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  flex-wrap: wrap;
 }
 
 .quote {
   box-shadow: 3px 10px 5px black;
   background-color: #F2F4F3;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .quote-text {
