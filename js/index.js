@@ -2,6 +2,10 @@ function imgToSmile() {
     document.getElementById("header-img").src = "images/ward-nobkg-smile.png"
 }
 
+function imgToBlush() {
+    document.getElementById("header-img").src = "images/ward-nobkg-blush.png"
+}
+
 function imgToNormal() {
     document.getElementById("header-img").src = "images/ward-nobkg.png"
 }
@@ -24,4 +28,10 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
+}
+
+// When the user clicks on div, open the popup
+function popUp() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
 }
