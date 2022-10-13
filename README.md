@@ -10,3 +10,4 @@ Hosted on [Digital Ocean](https://www.digitalocean.com/). Bought domain name htt
 - Add CICD pipeline
 - Add linters
 - Add tests
+- Add branch protection rule (no push from main)
