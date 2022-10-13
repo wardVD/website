@@ -7,3 +7,6 @@ Hosted on [Digital Ocean](https://www.digitalocean.com/). Bought domain name htt
 - Allow people to upload quotes themselves (send email to me if they do + set up backend to select how they know me)
 - Include meetups
 - Include info on previous employments + experiences
+- Add CICD pipeline
+- Add linters
+- Add tests
