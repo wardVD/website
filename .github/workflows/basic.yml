@@ -1,11 +1,11 @@
 name: Basic checks
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
   push:
     branches: 
       - main
-  pull-request:
+  pull_request:
 
 # This allows a subsequently queued workflow run to interrupt previous runs
 concurrency:
