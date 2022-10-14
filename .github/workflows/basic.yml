@@ -1,0 +1,21 @@
+name: Basic checks
+
+on:
+  workflow-dispatch:
+  push:
+    branches: 
+      - main
+  pull-request:
+
+# This allows a subsequently queued workflow run to interrupt previous runs
+concurrency:
+  group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
+  cancel-in-progress: true
+
+jobs:
+  runs-on: ubuntu-latest 
+    steps:
+    - uses: actions/checkout@v3
+    - name: Dev to main
+      if: ${{ github.head_ref != 'dev' }}
+      run: exit 1
