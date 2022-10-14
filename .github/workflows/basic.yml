@@ -14,8 +14,8 @@ concurrency:
 
 jobs:
   runs-on: ubuntu-latest 
-    steps:
-      - uses: actions/checkout@v3
-      - name: Dev to main
-        if: ${{ github.head_ref != 'dev' }}
-        run: exit 1
+  steps:
+    - uses: actions/checkout@v3
+    - name: Dev to main
+      if: ${{ github.head_ref != 'dev' }}
+      run: exit 1
