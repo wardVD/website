@@ -1,2 +1,2 @@
 # seizoensgroentendeclercq
-Website for Seizoensgroeten De Clercq
+Website for Seizoensgroenten De Clercq
