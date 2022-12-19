@@ -277,3 +277,20 @@ body {
     opacity: 1;
   }
 }
+
+#bye {
+  font-size: 60px;
+  margin: 0 auto;
+  padding-top: 8rem;
+  text-align: center;
+}
+
+#deadline {
+  font-family: 'Cursed Timer ULiL', sans-serif;
+  max-width: 400px;
+  font-size: 50px;
+  color: crimson;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}

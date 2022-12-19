@@ -35,3 +35,37 @@ function popUp() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
+
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function () {
+
+    // Get today's date and time
+    var countDownDate = new Date("Dec 23, 2022 16:00:00").getTime();
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    function secondsToHms(d) {
+        d = Number(d);
+        var h = Math.floor(d / 3600);
+        var m = Math.floor(d % 3600 / 60);
+        var s = Math.floor(d % 3600 % 60);
+
+        return [h, m, s];
+    }
+
+    var [hours, minutes, seconds] = secondsToHms(distance / 1000)
+
+    // Output the result in an element with id="demo"
+    document.getElementById("deadline").innerHTML = `${hours}:${minutes}:${seconds}`;
+
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("deadline").innerHTML = "He's outta here!";
+    }
+}, 1000);
