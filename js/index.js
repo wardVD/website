@@ -40,7 +40,7 @@ function popUp() {
 var x = setInterval(function () {
 
     // Get today's date and time
-    var countDownDate = new Date("Dec 23, 2022 16:30:00").getTime();
+    var countDownDate = new Date("Dec 23, 2022 16:40:00").getTime();
     var now = new Date().getTime();
 
     // Find the distance between now and the count down date
