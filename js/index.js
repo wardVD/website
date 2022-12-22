@@ -36,14 +36,11 @@ function popUp() {
     popup.classList.toggle("show");
 }
 
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-
 // Update the count down every 1 second
 var x = setInterval(function () {
 
     // Get today's date and time
-    var countDownDate = new Date("Dec 23, 2022 16:00:00").getTime();
+    var countDownDate = new Date("Dec 23, 2022 16:30:00").getTime();
     var now = new Date().getTime();
 
     // Find the distance between now and the count down date
@@ -66,6 +63,7 @@ var x = setInterval(function () {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("deadline").innerHTML = "He's outta here!";
+        document.getElementById("deadline").innerHTML = "";
+        document.getElementById("deadline").innerHTML += '<img alt="Ward bye bye" width=300px height=400px src="../images/byebye.jpg"/>';
     }
 }, 1000);
