@@ -55,10 +55,16 @@ var x = setInterval(function () {
         return [h, m, s];
     }
 
+    function pad(num, size) {
+        num = num.toString();
+        while (num.length < size) num = "0" + num;
+        return num;
+    }
+
     var [hours, minutes, seconds] = secondsToHms(distance / 1000)
 
     // Output the result in an element with id="demo"
-    document.getElementById("deadline").innerHTML = `${hours}:${minutes}:${seconds}`;
+    document.getElementById("deadline").innerHTML = `${pad(hours, 2)}:${pad(minutes, 2)}:${pad(seconds, 2)}`;
 
     // If the count down is over, write some text 
     if (distance < 0) {
